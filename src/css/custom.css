@@ -1,0 +1,107 @@
+@font-face{
+	font-family: Oxygen;
+	src: url("../fonts/Oxygen-Regular.ttf");
+}
+
+@font-face{
+	font-family: Oxygen-Bold;
+	src: url("../fonts/Oxygen-Bold.ttf");
+}
+
+@font-face{
+	font-family: Oxygen-Light;
+	src: url("../fonts/Oxygen-Light.ttf");
+}
+
+
+#content{
+	font-family: Oxygen;
+}
+
+
+
+.row{
+	text-align: left;	
+}
+
+h1.page-header{
+	font-size: 48px;
+	font-family: Oxygen-Bold;
+}
+
+p{
+	font-size: 16px;
+	text-indent: 20px;
+}
+
+.navbar{
+	margin-bottom: 0px;
+}
+
+.navbar a{
+	color: #080419;
+}
+
+
+
+.page-header-beta{
+	padding: 200px 0px;
+	text-align: center;
+	background-color: #080419;
+	color: #FFFFFF;
+	font-family: Oxygen;
+
+}
+
+.page-header-beta p{
+	font-family: Oxygen-Light;
+}
+
+.page-header-beta h1{
+	font-size: 5em;
+	font-family: Oxygen-Bold;
+}
+
+.page-header-beta a{
+	color: #FFFFFF;
+}
+
+.btn-git{
+	background-color: transparent;
+	font-size: 2em;
+}
+
+.btn-git:hover, .btn-git:focus, .btn-git:active{
+	background-color: #FFFFFF;
+	color: #080419;
+}
+
+.member-box {
+	}
+
+.member-box> h3{
+	text-align: center;
+}
+
+.member-box img{
+	margin-left: auto;
+	margin-right: auto;
+	max-height: 200px;
+}
+
+.an-footer{
+	text-align: center;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	margin-top: 50px;
+}
+
+.logo-img{
+	max-height: 250px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.logo-section{
+	text-align: center;
+}
