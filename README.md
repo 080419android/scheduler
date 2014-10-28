@@ -20,8 +20,12 @@ This is a course requirement of CS 191/CS 192 Software Engineering Courses of th
 sudo apt-get install dia
 ```
 
-If dia doesn't appear on the app list open it through the terminal
+If dia doesn't appear on the app list, open it through the terminal
 
 ```
 dia file_name.dia
 ```
+
+#Wireframe tool
+
+The wireframes were created with [Ninja Mock](http://ninjamock.com/)
