@@ -17,7 +17,7 @@ This is a course requirement of CS 191/CS 192 Software Engineering Courses of th
 
 Android Studio
 ====
-Android Studio is an IDE for Android Development [https://developer.android.com/sdk/installing/studio.html](Get it here)
+Android Studio is an IDE for Android Development [Get it Here](https://developer.android.com/sdk/installing/studio.html)
 
 #Installing Dia for class diagram editable
 ```
