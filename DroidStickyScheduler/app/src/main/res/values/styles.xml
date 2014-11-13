@@ -1,0 +1,23 @@
+<resources>
+
+    <style name="CalAppTheme" parent="@android:style/Theme.Holo.Light">
+        <item name="android:actionBarStyle">@style/CalAppTheme.ActionBar</item>
+        <item name="android:actionBarTabTextStyle">@style/CalAppTheme.ActionBar.TabText</item>
+        <item name="android:actionMenuTextColor">#FFFFFF</item>
+    </style>
+
+    <style name="CalAppTheme.ActionBar" parent="@android:style/Widget.Holo.ActionBar">
+        <item name="android:background">#080419</item>
+        <item name="android:titleTextStyle">@style/CalAppTheme.ActionBar.Title</item>
+
+    </style>
+
+    <style name="CalAppTheme.ActionBar.Title" parent="@android:style/TextAppearance.Holo.Widget.ActionBar.Title">
+        <item name="android:textColor">#FFFFFF</item>
+    </style>
+
+    <style name="CalAppTheme.ActionBar.TabText" parent="@android:style/Widget.Holo.ActionBar.TabText">
+        <item name="android:textColor">#FFFFFF</item>
+    </style>
+
+</resources>
