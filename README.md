@@ -15,6 +15,10 @@ This is a course requirement of CS 191/CS 192 Software Engineering Courses of th
 <p>The project repository can be accessed <a href="https://github.com/080419android/scheduler">here</a></p>
 <p>For more information please visit the <a href="https://080419android.github.io/scheduler">Project Site</a>.</p>
 
+Android Studio
+====
+Android Studio is an IDE for Android Development [https://developer.android.com/sdk/installing/studio.html](Get it here)
+
 #Installing Dia for class diagram editable
 ```
 sudo apt-get install dia
