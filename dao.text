@@ -1,0 +1,23 @@
+Events.xml:
+<event>
+<start_date_time> Date </start_date_time>
+<end_date_time> Date </end_date_time>
+<is_all_day> Boolean </is_all_day>
+<repeat_every> Date </repeat_every>
+<repeat_until> Date </repeat_until>
+<description> String </description>
+<location> android.location.Location </location>
+</event>
+
+EventsDAO:
+getEvent();
+
+
+TransferObject:
+start_date_time: Date
+end_date_time: Date
+is_all_day: Boolean
+repeat_every: Date
+repeat_until: Date
+description: String
+location: android.location.Location
