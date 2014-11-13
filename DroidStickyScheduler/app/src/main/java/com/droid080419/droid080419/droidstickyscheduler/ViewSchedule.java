@@ -23,10 +23,8 @@ public class ViewSchedule extends Activity {
         Date date = new Date(stamp.getTime());
         Calendar cal = Calendar.getInstance();
         cal.setTime(date);
-        String curMonth = cal.getDisplayName(Calendar.DATE,Calendar.SHORT, Locale.ENGLISH);
+        String curMonth = cal.getDisplayName(Calendar.MONTH,Calendar.SHORT, Locale.ENGLISH);
         setTitle(curMonth);
-
-
     }
 
 
