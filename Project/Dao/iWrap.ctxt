@@ -1,0 +1,8 @@
+#BlueJ class context
+comment0.params=
+comment0.target=iWrap()
+comment1.params=
+comment1.target=java.util.ArrayList\ getList()
+comment2.params=orderDetailList
+comment2.target=void\ setList(java.util.ArrayList)
+numComments=3

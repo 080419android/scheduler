@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<iWrap>
+    <transfers>
+        <transfer>
+            <startDate>2014-11-19T09:50:46.184+08:00</startDate>
+            <endDate>2014-11-19T09:50:46.185+08:00</endDate>
+            <isAllDay>false</isAllDay>
+            <repeatEvery>2014-11-19T09:50:46.185+08:00</repeatEvery>
+            <repeatUntil>2014-11-19T09:50:46.185+08:00</repeatUntil>
+            <description>testing123</description>
+        </transfer>
+        <transfer>
+            <startDate>2014-11-19T09:50:46.184+08:00</startDate>
+            <endDate>2014-11-19T09:50:46.185+08:00</endDate>
+            <isAllDay>false</isAllDay>
+            <repeatEvery>2014-11-19T09:50:46.185+08:00</repeatEvery>
+            <repeatUntil>2014-11-19T09:50:46.185+08:00</repeatUntil>
+            <description>testing123</description>
+        </transfer>
+    </transfers>
+</iWrap>
