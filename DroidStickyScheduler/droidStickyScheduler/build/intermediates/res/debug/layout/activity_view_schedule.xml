@@ -1,0 +1,20 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.droidstickyscheduler.ViewScheduleActivity" >
+
+    <CalendarView
+        android:id="@+id/calendarView"
+    	android:showWeekNumber="false"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true" />
+
+</RelativeLayout>
+<!-- From: file:/home/genesis/Documents/Code/191/scheduler/DroidStickyScheduler/droidStickyScheduler/src/main/res/layout/activity_view_schedule.xml -->
