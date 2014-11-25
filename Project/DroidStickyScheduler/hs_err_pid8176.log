@@ -1,0 +1,129 @@
+#
+# A fatal error has been detected by the Java Runtime Environment:
+#
+#  Internal Error (javaClasses.cpp:136), pid=8176, tid=7488
+#  fatal error: Invalid layout of preloaded class
+#
+# JRE version:  (7.0_71-b14) (build )
+# Java VM: Java HotSpot(TM) Client VM (24.71-b01 mixed mode windows-x86 )
+# Failed to write core dump. Minidumps are not enabled by default on client versions of Windows
+#
+# If you would like to submit a bug report, please visit:
+#   http://bugreport.sun.com/bugreport/crash.jsp
+#
+
+---------------  T H R E A D  ---------------
+
+Current thread (0x0036cc00):  JavaThread "Unknown thread" [_thread_in_vm, id=7488, stack(0x00680000,0x006d0000)]
+
+Stack: [0x00680000,0x006d0000],  sp=0x006cf7b8,  free space=317k
+Native frames: (J=compiled Java code, j=interpreted, Vv=VM code, C=native code)
+V  [jvm.dll+0x1911e4]
+V  [jvm.dll+0x18ae66]
+V  [jvm.dll+0x35f00]
+V  [jvm.dll+0x35f86]
+V  [jvm.dll+0x447ed]
+V  [jvm.dll+0x44a9e]
+V  [jvm.dll+0x9395a]
+V  [jvm.dll+0x93d0b]
+V  [jvm.dll+0x140831]
+V  [jvm.dll+0x16341c]
+V  [jvm.dll+0xca7bf]
+C  [javaw.exe+0x13ce]
+C  [javaw.exe+0x1e40]
+C  [javaw.exe+0xa601]
+C  [javaw.exe+0xa68b]
+C  [kernel32.dll+0x4ee1c]
+C  [ntdll.dll+0x637eb]
+C  [ntdll.dll+0x637be]
+
+
+---------------  P R O C E S S  ---------------
+
+Java Threads: ( => current thread )
+
+Other Threads:
+
+=>0x0036cc00 (exited) JavaThread "Unknown thread" [_thread_in_vm, id=7488, stack(0x00680000,0x006d0000)]
+
+VM state:not at safepoint (not fully initialized)
+
+VM Mutex/Monitor currently owned by a thread: None
+
+GC Heap History (0 events):
+No events
+
+Deoptimization events (0 events):
+No events
+
+Internal exceptions (0 events):
+No events
+
+Events (10 events):
+Event: 0.031 loading class 0x005898d0 done
+Event: 0.031 loading class 0x00589360 done
+Event: 0.031 loading class 0x00589340
+Event: 0.031 loading class 0x005906f0
+Event: 0.031 loading class 0x005906f0 done
+Event: 0.031 loading class 0x00590720
+Event: 0.032 loading class 0x00590720 done
+Event: 0.032 loading class 0x00590750
+Event: 0.032 loading class 0x00590750 done
+Event: 0.032 loading class 0x00589340 done
+
+
+Dynamic libraries:
+0x00cb0000 - 0x00cdf000 	C:\Program Files\Java\jre7\bin\javaw.exe
+0x77a30000 - 0x77b6c000 	C:\Windows\SYSTEM32\ntdll.dll
+0x773f0000 - 0x774c4000 	C:\Windows\system32\kernel32.dll
+0x75c60000 - 0x75cab000 	C:\Windows\system32\KERNELBASE.dll
+0x77250000 - 0x772f0000 	C:\Windows\system32\ADVAPI32.dll
+0x76190000 - 0x7623c000 	C:\Windows\system32\msvcrt.dll
+0x77b70000 - 0x77b89000 	C:\Windows\SYSTEM32\sechost.dll
+0x772f0000 - 0x77392000 	C:\Windows\system32\RPCRT4.dll
+0x77840000 - 0x77909000 	C:\Windows\system32\USER32.dll
+0x773a0000 - 0x773ee000 	C:\Windows\system32\GDI32.dll
+0x77710000 - 0x7771a000 	C:\Windows\system32\LPK.dll
+0x76530000 - 0x765cd000 	C:\Windows\system32\USP10.dll
+0x722c0000 - 0x7245e000 	C:\Windows\WinSxS\x86_microsoft.windows.common-controls_6595b64144ccf1df_6.0.7601.17514_none_41e6975e2bd6f2b2\COMCTL32.dll
+0x75ec0000 - 0x75f17000 	C:\Windows\system32\SHLWAPI.dll
+0x76010000 - 0x7602f000 	C:\Windows\system32\IMM32.DLL
+0x77720000 - 0x777ec000 	C:\Windows\system32\MSCTF.dll
+0x5a600000 - 0x5a6bf000 	C:\Program Files\Java\jre7\bin\msvcr100.dll
+0x5c0c0000 - 0x5c449000 	C:\Program Files\Java\jre7\bin\client\jvm.dll
+0x6c7b0000 - 0x6c7b7000 	C:\Windows\system32\WSOCK32.dll
+0x77c20000 - 0x77c55000 	C:\Windows\system32\WS2_32.dll
+0x76360000 - 0x76366000 	C:\Windows\system32\NSI.dll
+0x74f90000 - 0x74fc2000 	C:\Windows\system32\WINMM.dll
+0x774d0000 - 0x774d5000 	C:\Windows\system32\PSAPI.DLL
+0x66e20000 - 0x66e2c000 	C:\Program Files\Java\jre7\bin\verify.dll
+0x66dd0000 - 0x66df0000 	C:\Program Files\Java\jre7\bin\java.dll
+0x66db0000 - 0x66dc3000 	C:\Program Files\Java\jre7\bin\zip.dll
+0x66530000 - 0x6661b000 	C:\Windows\system32\dbghelp.dll
+
+VM Arguments:
+jvm_args: -Dfile.encoding=Cp1252 -Xbootclasspath:C:\Users\Jiggas\Documents\Android\adt-bundle-windows-x86-20140702\sdk\platforms\android-21\android.jar 
+java_command: com.example.droidstickyscheduler.DataAccessObject
+Launcher Type: SUN_STANDARD
+
+Environment Variables:
+PATH=C:/Program Files/Java/jre7/bin/client;C:/Program Files/Java/jre7/bin;C:/Program Files/Java/jre7/lib/i386;C:\Program Files\NVIDIA Corporation\PhysX\Common;C:\Program Files\Common Files\Microsoft Shared\Windows Live;C:\Program Files\ActiveState Komodo Edit 8\;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\MinGW\bin;C:\Program Files\Java\jdk1.7.0_09\bin;C:\Python27;C:\Python27\PyInstaller;C:\Program Files\Java\jdk1.7.0_51\bin;C:\Program Files\Windows Live\Shared;C:\Program Files\PC Connectivity Solution\;C:\Program Files\NVIDIA Corporation\PhysX\Common;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\MinGW\bin;C:\Program Files\Java\jdk1.7.0_09\bin;C:\Program Files\NVIDIA Corporation\PhysX\Common;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\MinGW\bin;C:\Program Files\Java\jdk1.7.0_09\bin;;C:\Pylo\MCreator\;C:\Pylo\MCreator\jdk\bin\;C:\Pylo\MCreator\jdk\jre\bin\;;C:\Pylo\MCreator\;C:\Pylo\MCreator\jdk\bin\;C:\Pylo\MCreator\jdk\jre\bin\;;C:\Pylo\MCreator\;C:\Pylo\MCreator\jdk\bin\;C:\Pylo\MCreator\jdk\jre\bin\;;C:\Pylo\MCreator\;C:\Pylo\MCreator\jdk\bin\;C:\Pylo\MCreator\jdk\jre\bin\;;C:\Program Files\Eclipse;
+USERNAME=Jiggas
+OS=Windows_NT
+PROCESSOR_IDENTIFIER=x86 Family 6 Model 23 Stepping 10, GenuineIntel
+
+
+
+---------------  S Y S T E M  ---------------
+
+OS: Windows 7 Build 7601 Service Pack 1
+
+CPU:total 4 (4 cores per cpu, 1 threads per core) family 6 model 23 stepping 10, cmov, cx8, fxsr, mmx, sse, sse2, sse3, ssse3, sse4.1, tsc
+
+Memory: 4k page, physical 3144948k(1056960k free), swap 6288144k(3440428k free)
+
+vm_info: Java HotSpot(TM) Client VM (24.71-b01) for windows-x86 JRE (1.7.0_71-b14), built on Sep 26 2014 16:30:49 by "java_re" with unknown MS VC++:1600
+
+time: Wed Nov 26 01:48:48 2014
+elapsed time: 0 seconds
+

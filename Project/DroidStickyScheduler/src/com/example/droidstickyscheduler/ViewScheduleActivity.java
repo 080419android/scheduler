@@ -1,19 +1,22 @@
 package com.example.droidstickyscheduler;
 
+import java.io.File;
+import java.util.ArrayList;
 import java.util.Calendar;
 import java.util.TimeZone;
 import java.util.concurrent.TimeUnit;
 
-import com.tyczj.extendedcalendarview.CalendarProvider;
-import com.tyczj.extendedcalendarview.Event;
-
 import android.app.Activity;
 import android.content.ContentValues;
+import android.content.Context;
 import android.net.Uri;
 import android.os.Bundle;
 import android.text.format.Time;
 import android.view.Menu;
 import android.view.MenuItem;
+
+import com.tyczj.extendedcalendarview.CalendarProvider;
+import com.tyczj.extendedcalendarview.Event;
 
 public class ViewScheduleActivity extends Activity {
 
@@ -22,12 +25,33 @@ public class ViewScheduleActivity extends Activity {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_view_schedule);
 		ContentValues values = new ContentValues();
+		Calendar cal = Calendar.getInstance();
+		
+		// Modified: - - - - -
+		File eventslist = new File("/data/data/com/example/droidstickyscheduler/files/eventslist.xml");
+		
+		//	Loads list of events from DAO
+		ArrayList<Transfer> events = DataAccessObject.load(eventslist);
+	    
+		//	Adds list of events to values
+		for(Transfer e: events){
+			values.put(CalendarProvider.COLOR, Event.COLOR_RED);
+			values.put(CalendarProvider.EVENT, e.getEventName());
+		    values.put(CalendarProvider.DESCRIPTION, e.getDescription());
+		    
+		    cal.setTime(e.getStartDate());
+		    values.put(CalendarProvider.START, cal.getTimeInMillis());
+		    cal.setTime(e.getEndDate());
+		    values.put(CalendarProvider.END, cal.getTimeInMillis());
+		}
+		
+		// - - - - -
+		
 	    values.put(CalendarProvider.COLOR, Event.COLOR_RED);
 	    values.put(CalendarProvider.DESCRIPTION, "Kainan");
 	    values.put(CalendarProvider.LOCATION, "Katipunan");
 	    values.put(CalendarProvider.EVENT, "Boys night out");
 
-	    Calendar cal = Calendar.getInstance();
 	    
 	    int startDayYear = 2014;
 	    int startDayMonth = 11;
