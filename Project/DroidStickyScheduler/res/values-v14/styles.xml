@@ -7,22 +7,6 @@
     -->
     <style name="AppBaseTheme" parent="android:Theme.Holo.Light.DarkActionBar">
         <!-- API 14 theme customizations can go here. -->
-        <item name="android:actionBarStyle">@style/ActionBarTheme</item>
-    	<item name="android:actionBarTabTextStyle">@style/ActionBarTheme.TabText</item>
-    	<item name="android:actionMenuTextColor">#FFF</item>
-    </style>
-    
-    <style name="ActionBarTheme" parent="android:Widget.Holo.ActionBar">
-        <item name="android:background">#080419</item>
-        <item name="android:titleTextStyle">@style/ActionBarTheme.Title</item>
-    </style>
-    
-     <style name="ActionBarTheme.Title" parent="android:TextAppearance.Holo.Widget.ActionBar.Title">
-         <item name="android:textColor">#FFF</item>
-     </style>
-    
-    <style name="ActionBarTheme.TabText" parent="android:Widget.Holo.ActionBar.TabText">
-        <item name="android:textColor">#FFFFFF</item>
     </style>
 
 </resources>

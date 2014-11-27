@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<shape xmlns:android="http://schemas.android.com/apk/res/android" android:shape="oval">
-    <solid android:color="#cbcbcb"/>
-
-</shape>
-<!-- From: file:/home/genesis/Documents/Code/191/scheduler/DroidStickyScheduler/extendedCalendarView/src/main/res/drawable/today.xml --><!-- From: file:/home/genesis/Documents/Code/191/scheduler/DroidStickyScheduler/droidStickyScheduler/build/intermediates/exploded-aar/DroidStickyScheduler/extendedCalendarView/unspecified/res/drawable/today.xml -->
