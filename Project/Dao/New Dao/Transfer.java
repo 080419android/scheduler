@@ -1,4 +1,4 @@
-package com.droid.droidstickyscheduler;
+
 /**
  * Transfer Object for the Data Access Object.
  * For use in system scheduler.

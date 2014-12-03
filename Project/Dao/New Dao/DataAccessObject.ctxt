@@ -1,0 +1,10 @@
+#BlueJ class context
+comment0.params=
+comment0.target=void\ test()
+comment1.params=list\ f
+comment1.target=void\ save(java.util.ArrayList,\ java.io.File)
+comment2.params=f
+comment2.target=java.util.ArrayList\ load(java.io.File)
+comment3.params=args
+comment3.target=void\ main(java.lang.String[])
+numComments=4

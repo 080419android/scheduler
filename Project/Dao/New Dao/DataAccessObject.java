@@ -1,5 +1,3 @@
-package com.droid.droidstickyscheduler;
-
 
 /**
  * Write a description of class DataAccessObject here.
@@ -15,7 +13,6 @@ import java.text.SimpleDateFormat;
 import java.text.ParsePosition;
 import java.util.Scanner;
 import java.io.FileNotFoundException;
-import java.io.InputStream;
 import java.io.PrintWriter;
 
 public class DataAccessObject
@@ -63,7 +60,7 @@ public class DataAccessObject
         pw.close();
     }
     
-    public static ArrayList<Transfer> load(InputStream f) throws FileNotFoundException
+    public static ArrayList<Transfer> load(File f) throws FileNotFoundException
     {
         SimpleDateFormat sdf = new SimpleDateFormat("EEE MMM dd HH:mm:ss zzz yyyy");
         Transfer curr = null;
@@ -114,7 +111,7 @@ public class DataAccessObject
     public static void main(String args[]){ //for testing purposes only
         test();
         try{
-            InputStream f =new File("test.tsf");
+            File f = new File("test.tsf");
             ArrayList<Transfer> arr = load(f);
             for(Transfer i : arr){
                 System.out.println(i.toString());
