@@ -1,6 +1,4 @@
 package com.droid.droidstickyscheduler;
-
-
 /**
  * Write a description of class DataAccessObject here.
  * 
@@ -15,7 +13,6 @@ import java.text.SimpleDateFormat;
 import java.text.ParsePosition;
 import java.util.Scanner;
 import java.io.FileNotFoundException;
-import java.io.InputStream;
 import java.io.PrintWriter;
 
 public class DataAccessObject
@@ -29,6 +26,7 @@ public class DataAccessObject
         tr.setEndDate(new Date());
         tr.setRepeatEvery(new Date());
         tr.setRepeatUntil(new Date());
+        tr.setName("test123");
         File file = new File("test.tsf");
         ArrayList<Transfer> arr = new ArrayList<Transfer>();
         arr.add(tr);
@@ -36,6 +34,7 @@ public class DataAccessObject
         tr.setDescription("testing456");
         tr.setStartDate(new Date());
         tr.setIsAllDay(false);
+        tr.setName("test456");
         tr.setEndDate(new Date());
         tr.setRepeatEvery(new Date());
         tr.setRepeatUntil(new Date());
@@ -52,6 +51,7 @@ public class DataAccessObject
         PrintWriter pw = new PrintWriter(f);
         for(Transfer t: list){
             pw.println("Transfer::");
+            pw.println("name::"+t.getName());
             pw.println("start_date::"+t.getStartDate().toString());
             pw.println("end_date::"+t.getEndDate().toString());
             pw.println("repeat_every::"+t.getRepeatEvery().toString());
@@ -63,7 +63,7 @@ public class DataAccessObject
         pw.close();
     }
     
-    public static ArrayList<Transfer> load(InputStream f) throws FileNotFoundException
+    public static ArrayList<Transfer> load(File f) throws FileNotFoundException
     {
         SimpleDateFormat sdf = new SimpleDateFormat("EEE MMM dd HH:mm:ss zzz yyyy");
         Transfer curr = null;
@@ -80,6 +80,9 @@ public class DataAccessObject
                     arr.add(curr);
                 }
                 curr = new Transfer();
+            }else if(line.startsWith("name::")){
+                line = line.replace("name::","");
+                curr.setName(line);
             }else if(line.startsWith("start_date::")){
                 line = line.replace("start_date::","");
                 curr.setStartDate(sdf.parse(line,pos));
@@ -114,7 +117,7 @@ public class DataAccessObject
     public static void main(String args[]){ //for testing purposes only
         test();
         try{
-            InputStream f =new File("test.tsf");
+            File f = new File("test.tsf");
             ArrayList<Transfer> arr = load(f);
             for(Transfer i : arr){
                 System.out.println(i.toString());

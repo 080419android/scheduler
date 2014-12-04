@@ -22,6 +22,7 @@ public class Transfer
     private Date repeat_every;
     private Date repeat_until;
     private String description;
+    private String name;
     //private android.location.Location
     
     /*
@@ -58,6 +59,9 @@ public class Transfer
     public String getDescription(){
         return description;
     }
+    public String getName(){
+        return name;
+    }
     
     public void setStartDate(Date start_date){
         this.start_date = start_date;
@@ -76,5 +80,8 @@ public class Transfer
     }
     public void setDescription(String description){
         this.description = description;
+    }
+    public void setName(String name){
+        this.name = name;
     }
 }

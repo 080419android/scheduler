@@ -35,7 +35,7 @@ public class CaledarViewActivity extends Activity {
  		//	Loads list of events from DAO
  		ArrayList<Transfer> events;
 		try {
-			events = DataAccessObject.load(am.open("events.xml"));
+			events = DataAccessObject.load(am.open("events.tsl"));
 			 final Map<Date,List<Transfer>> eventMap = new HashMap<Date,List<Transfer>>();
 		 	    //	Adds list of events to values
 		 		for(Transfer e: events){
@@ -84,7 +84,7 @@ public class CaledarViewActivity extends Activity {
 		
 		int i = 0;
 		for(Transfer e: events){
-			names[i] = e.getEventName();
+			names[i] = e.getName();
 			startDates[i] = ft.format(e.getStartDate());
 			endDates[i] = ft.format(e.getEndDate());
 			descriptions[i] = e.getDescription();
